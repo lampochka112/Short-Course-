@@ -1,1 +1,1 @@
-# Short-Course-
+# Short-Course
