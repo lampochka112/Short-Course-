@@ -11,3 +11,7 @@
 - [Функции](04_Functions/README.md)
 - [Объектно-ориентированное программирование](05_OOP/README.md)
 - [Заключение и финальный проект](06_Conclusion/README.md)
+
+## Установка
+
+Для начала работы с C++ вам нужно установить компилятор. Рекомендуется использовать [g++](https://gcc.gnu.org/) или [Visual Studio](https://visualstudio.microsoft.com/).
