@@ -95,3 +95,46 @@ int main() {
 # Функции
 
 Функции позволяют организовать код и повторно использовать
+
+
+# Заключение
+
+Поздравляем! Вы завершили краткий курс по C++. Теперь вы знакомы с основами языка, включая переменные, типы данных, управляющие структуры, функции и объектно-ориентированное программирование.
+
+## Финальный проект
+
+В качестве финального проекта вы можете создать простое приложение, которое использует все изученные концепции. Например, вы можете создать консольное приложение для управления списком задач.
+
+### Пример кода
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <string>
+
+class Task {
+public:
+    std::string name;
+    bool completed;
+
+    Task(std::string n) : name(n), completed(false) {}
+};
+
+class TaskManager {
+private:
+    std::vector<Task> tasks;
+
+public:
+    void addTask(std::string name) {
+        tasks.push_back(Task(name));
+    }
+
+    void completeTask(int index) {
+        if (index >= 0 && index < tasks.size()) {
+            tasks[index].completed = true;
+        }
+    }
+
+    void showTasks() {
+        for (int i = 0; i < tasks.size(); i++) {
+            std::cout << (tasks[i].completed ? "[X] " : "[ ] ") << tasks[i].name << std::endl
